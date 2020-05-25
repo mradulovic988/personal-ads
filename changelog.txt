@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 05-26-2020
 ### Added
 - Preparing all file structure
+- Frontend footer and header
+- Backend footer and header
 
 ### Changed
 - 

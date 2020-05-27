@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+<?php include 'config/Functions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 

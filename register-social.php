@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/register-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
+<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/register-social.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
 <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -53,13 +53,13 @@
                                                 <div class="custom-control custom-control-solid custom-checkbox">
                                                     <input class="custom-control-input small" id="customCheck1" type="checkbox" /><label class="custom-control-label mr-3" for="customCheck1">I accept the <a href="javascript:void(0);">terms &amp; conditions</a>.</label>
                                                 </div>
-                                                <a class="btn btn-primary" href="login-social.html">Create Account</a>
+                                                <a class="btn btn-primary" href="login-social.php">Create Account</a>
                                             </div>
                                         </form>
                                     </div>
                                     <hr class="my-0" />
                                     <div class="card-body px-5 py-4">
-                                        <div class="small text-center">Have an account? <a href="login-social.html">Sign in!</a></div>
+                                        <div class="small text-center">Have an account? <a href="login-social.php">Sign in!</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -90,5 +90,5 @@
         <sb-customizer project="sb-admin-pro"></sb-customizer>
     </body>
 
-<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/register-social.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
+<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/register-social.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
 </html>

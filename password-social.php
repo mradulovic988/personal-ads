@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/login-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
+<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/password-social.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
 <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content />
         <meta name="author" content />
-        <title>Login - SB Admin Pro</title>
+        <title>Forgot Password - SB Admin Pro</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
@@ -20,21 +20,20 @@
                 <main>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-5">
-                                <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header justify-content-center"><h3 class="font-weight-light my-4">Login</h3></div>
-                                    <div class="card-body">
+                            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-11">
+                                <div class="card my-5">
+                                    <div class="card-body p-5 text-center"><div class="h3 font-weight-light mb-0">Password Recovery</div></div>
+                                    <hr class="my-0" />
+                                    <div class="card-body p-5">
+                                        <div class="text-center small text-muted mb-4">Enter your email address below and we will send you a link to reset your password.</div>
                                         <form>
-                                            <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Email</label><input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" /></div>
-                                            <div class="form-group"><label class="small mb-1" for="inputPassword">Password</label><input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" /></div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox"><input class="custom-control-input" id="rememberPasswordCheck" type="checkbox" /><label class="custom-control-label" for="rememberPasswordCheck">Remember password</label></div>
-                                            </div>
-                                            <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"><a class="small" href="password-basic.html">Forgot Password?</a><a class="btn btn-primary" href="index-2.html">Login</a></div>
+                                            <div class="form-group"><label class="text-gray-600 small" for="emailExample">Email address</label><input class="form-control form-control-solid py-4" type="text" placeholder aria-label="Email Address" aria-describedby="emailExample" /></div>
+                                            <div class="form-group mb-0"><a class="btn btn-primary" href="login-social.php">Reset Password</a></div>
                                         </form>
                                     </div>
-                                    <div class="card-footer text-center">
-                                        <div class="small"><a href="register-basic.html">Need an account? Sign up!</a></div>
+                                    <hr class="my-0" />
+                                    <div class="card-body px-5 py-4">
+                                        <div class="small text-center">New user? <a href="register-social.php">Create an account!</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -65,5 +64,5 @@
         <sb-customizer project="sb-admin-pro"></sb-customizer>
     </body>
 
-<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/login-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
+<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/password-social.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
 </html>

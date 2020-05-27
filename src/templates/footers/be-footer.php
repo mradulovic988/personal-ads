@@ -21,10 +21,5 @@
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/datatables-demo.js"></script>
-
-        <script src="js/sb-customizer.js"></script>
-        <sb-customizer project="sb-admin-pro"></sb-customizer>
     </body>
-
-<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:12:35 GMT -->
 </html>

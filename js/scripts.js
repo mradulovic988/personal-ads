@@ -72,13 +72,13 @@
   });
 
   // Init sidebar
-  let activatedPath = window.location.pathname.match(/([\w-]+\.html)/, '$1');
+  let activatedPath = window.location.pathname.match(/([\w-]+\.php)/, '$1');
 
   if (activatedPath) {
     activatedPath = activatedPath[0];
   }
   else {
-    activatedPath = 'index.html';
+    activatedPath = 'index.php';
   }
     
   let targetAnchor = $('[href="' + activatedPath + '"]');

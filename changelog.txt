@@ -17,3 +17,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - 
+
+## [1.0.0] - 05-27-2020
+### Added
+- Functions class
+
+### Changed
+- 
+
+### Removed
+- 
+
+## [1.0.0] - 05-28-2020
+### Added
+- Added realpath()
+- File structure finished
+
+### Changed
+- 
+
+### Removed
+- 

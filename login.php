@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    
-<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/login-social.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
-<head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content />
-        <meta name="author" content />
-        <title>Login - SB Admin Pro</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
-    </head>
+<?php include realpath('src/templates/headers/auth-header.php'); ?>
     <body class="bg-primary">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
@@ -31,7 +16,7 @@
                                         <form>
                                             <div class="form-group"><label class="text-gray-600 small" for="emailExample">Email address</label><input class="form-control form-control-solid py-4" type="text" placeholder aria-label="Email Address" aria-describedby="emailExample" /></div>
                                             <div class="form-group"><label class="text-gray-600 small" for="passwordExample">Password</label><input class="form-control form-control-solid py-4" type="password" placeholder aria-label="Password" aria-describedby="passwordExample" /></div>
-                                            <div class="form-group"><a class="small" href="password-social.php">Forgot your password?</a></div>
+                                            <div class="form-group"><a class="small" href="forget-password.php">Forgot your password?</a></div>
                                             <div class="form-group d-flex align-items-center justify-content-between mb-0">
                                                 <div class="custom-control custom-control-solid custom-checkbox"><input class="custom-control-input small" id="customCheck1" type="checkbox" /><label class="custom-control-label" for="customCheck1">Remember password</label></div>
                                                 <a class="btn btn-primary" href="index-2.php">Login</a>
@@ -40,7 +25,7 @@
                                     </div>
                                     <hr class="my-0" />
                                     <div class="card-body px-5 py-4">
-                                        <div class="small text-center">New user? <a href="register-social.php">Create an account!</a></div>
+                                        <div class="small text-center">New user? <a href="register.php">Create an account!</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -48,28 +33,4 @@
                     </div>
                 </main>
             </div>
-            <div id="layoutAuthentication_footer">
-                <footer class="footer mt-auto footer-dark">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 small">Copyright &#xA9; Your Website 2020</div>
-                            <div class="col-md-6 text-md-right small">
-                                <a href="#!">Privacy Policy</a>
-                                &#xB7;
-                                <a href="#!">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-
-        <script src="js/sb-customizer.js"></script>
-        <sb-customizer project="sb-admin-pro"></sb-customizer>
-    </body>
-
-<!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/login-social.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 22:13:01 GMT -->
-</html>
+<?php include realpath('src/templates/footers/auth-footer.php'); ?>

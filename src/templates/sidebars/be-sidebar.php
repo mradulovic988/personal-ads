@@ -35,9 +35,9 @@
                 </a>
                 <div class="collapse" id="collapseAuth" data-parent="#accordionSidenav">
                     <nav class="sidenav-menu-nested nav">
-                        <a class="nav-link" href="login-social.php">Login</a>
-                        <a class="nav-link" href="register-social.php">Register</a>
-                        <a class="nav-link" href="password-social.php">Forgot Password</a>
+                        <a class="nav-link" href="login.php">Login</a>
+                        <a class="nav-link" href="register.php">Register</a>
+                        <a class="nav-link" href="forget-password.php">Forgot Password</a>
                         <a class="nav-link" href="401.php">401 Page</a>
                         <a class="nav-link" href="404.php">404 Page</a>
                         <a class="nav-link" href="404-glitch.php">404 Page (Glitch Effect)</a>

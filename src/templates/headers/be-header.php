@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content />
         <meta name="author" content />
-        <title>Dashboard - SB Admin Pro</title>
+        <title>LO - Startup App</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
@@ -15,7 +15,7 @@
     </head>
     <body class="nav-fixed">
         <nav class="topnav navbar navbar-expand shadow navbar-light bg-white" id="sidenavAccordion">
-            <a class="navbar-brand d-none d-sm-block" href="index-2.php">SB Admin Pro</a>
+            <a class="navbar-brand d-none d-sm-block" href="index.php">LO - Startup App</a>
             <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 mr-lg-2" id="sidebarToggle" href="#">
                 <i data-feather="menu"></i>
             </button>

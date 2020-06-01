@@ -1,5 +1,6 @@
 <?php ob_start(); ?>
-<?php include 'config/Functions.php'; ?>
+<?php include realpath('config/Database.php'); ?>
+<?php include realpath('config/Functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +18,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/heroic-features.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet" />
 
 </head>
 

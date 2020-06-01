@@ -1,0 +1,15 @@
+.ajax-loader {
+    display: none;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+body.loading .ajax-loader {
+    overflow: hidden;
+}
+body.loading .ajax-loader {
+    display: block;
+}

@@ -3,13 +3,18 @@
  * Functions class
  */
 
-class Functions
+class Functions extends Database
 {
-    public $path;
 
-    public function absPath($path)
+    public function __construct($dbhost = 'localhost', $dbuser = 'root', $dbpass = 'komra1988', $dbname = 'lo', $charset = 'utf8')
     {
-        return realpath($this->path);
+        parent::__construct($dbhost, $dbuser, $dbpass, $dbname, $charset);
+    }
+
+    public function redirect($location)
+    {
+        header("Location: " . $location);
+        exit();
     }
 }
 

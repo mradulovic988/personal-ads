@@ -74,7 +74,7 @@
                                         </div>
                                         <div class="form-group d-flex align-items-center justify-content-between">
                                             <div class="custom-control custom-control-solid custom-checkbox">
-                                                <input class="custom-control-input small" id="customCheck1" name="acceptpolicy" type="checkbox"/>
+                                                <input class="custom-control-input small" id="customCheck1" name="acceptpolicy" type="checkbox" required="" oninvalid="this.setCustomValidity('Ovo polje je obavezno.')" oninput="setCustomValidity('')"/>
                                                 <label class="custom-control-label mr-3" for="customCheck1">Prihvatam 
                                                     <a href="javascript:void(0);">sve uslove</a>.
                                                 </label>
@@ -91,6 +91,9 @@
                                 <div class="card-body px-5 py-4">
                                     <div class="small text-center">Vec imate svoj nalog? 
                                         <a href="login.php">Ulogujte se!</a>
+                                    </div>
+                                    <div class="small text-center">Vrati se na
+                                        <a href="./">početnu stranu</a>
                                     </div>
                                 </div>
                             </div>

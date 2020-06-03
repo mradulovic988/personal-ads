@@ -50,7 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 -
 
-## [1.0.0] - 06-02-2020
+## [1.0.0] - 06-01-2020
 ### Added
 - Error template
 - Register form
@@ -61,3 +61,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 -
+
+## [1.0.0] - 06-02-2020
+### Added
+- Login form done
+- Session start on be-header
+
+### Changed
+-
+
+### Removed
+-
+
+## [1.0.0] - 06-03-2020
+### Added
+- Added profile additional information
+- Added additional information AJAX request
+- Profile image on customer portal
+- Small profile image on customer portal header
+- First name on customer portal header
+- Last name on customer portal header
+- Email on customer portal header
+- Updated placeholder if they have values from database on customer portal additional information
+
+### Changed
+-
+
+### Removed
+-
+
+### Bugs
+- Check image issue with AJAX request on customer additional information portal

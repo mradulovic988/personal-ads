@@ -13,3 +13,22 @@ body.loading .ajax-loader {
 body.loading .ajax-loader {
     display: block;
 }
+
+div#phoneSuccess {
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.profileImage {
+    object-fit: cover;
+    width: 10rem;
+    border-radius: 50%;
+    height: 10rem;
+    margin: 0 3rem 0 0;
+}
+
+.myProfilWrapper {
+    position: relative;
+    top: 50px;
+}

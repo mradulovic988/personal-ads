@@ -7,8 +7,8 @@
                         <div class="container-fluid">
                             <div class="page-header-content">
                                 <h1 class="page-header-title">
-                                    <div class="page-header-icon"><i data-feather="filter"></i></div>
-                                    <span>Tables</span>
+                                    <div class="page-header-icon"><i data-feather="user"></i></div>
+                                    <span>Korisnici</span>
                                 </h1>
                                 <div class="page-header-subtitle">An extended version of the DataTables library, customized for SB Admin Pro</div>
                             </div>

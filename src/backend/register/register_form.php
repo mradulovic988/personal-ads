@@ -46,13 +46,11 @@ if (isset($_POST['register_submit'])) {
 
         $add_user = $db->query("INSERT INTO users (user_fname, user_lname, user_email, user_name, user_password, user_role, user_date) VALUES (?, ?, ?, ?, ?, ?, NOW())", $register_firstName, $register_lastName, $register_email, $register_userName, $register_password, $user_role);
 
-        $_SESSION['username'] = $register_userName;
+        $_SESSION['user_name']  = $register_userName;
+        $_SESSION['user_email'] = $register_email;
 
         $add_user->close();
 
         $function->redirect('login.php');
     }
-
-
-
 }

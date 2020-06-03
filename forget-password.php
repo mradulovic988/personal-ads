@@ -28,6 +28,9 @@
                                     <div class="small text-center">Novi korisnik? 
                                         <a href="register.php">Napravite svoj nalog!</a>
                                     </div>
+                                    <div class="small text-center">Vrati se na
+                                        <a href="./">početnu stranu</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

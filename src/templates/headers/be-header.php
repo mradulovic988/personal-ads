@@ -1,6 +1,10 @@
 <?php ob_start(); ?>
+<?php session_start(); ?>
 <?php include realpath('config/Database.php'); ?>
 <?php include realpath('config/Functions.php'); ?>
+<?php $function->loggedIn(); ?>
+<?php $profile = $db->query('SELECT user_pimage, user_email, user_fname, user_lname FROM users WHERE user_name = ?', $_SESSION['user_name'])->fetchArray(); ?>
+<?php $pimage = !empty($profile['user_pimage']) ? 'assets/img/register-user/' . $profile['user_pimage'] : 'assets/img/register-user/avatar.png'; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,55 +31,6 @@
                 <input class="form-control form-control-solid mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
             </form>
             <ul class="navbar-nav align-items-center ml-auto">
-                <li class="nav-item dropdown no-caret mr-3">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        >
-                        <div class="d-inline d-md-none font-weight-500">Docs</div>
-                        <div class="d-none d-md-inline font-weight-500">Documentation</div>
-                        <i class="fas fa-chevron-right dropdown-arrow"></i
-                    >
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right py-0 o-hidden mr-n15 mr-lg-0 animated--fade-in-up" aria-labelledby="navbarDropdownDocs">
-                        <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-admin-pro" target="_blank"
-                            >
-                            <div class="icon-stack bg-primary-soft text-primary mr-4">
-                                <i data-feather="book"></i>
-                            </div>
-                            <div>
-                                <div class="small text-gray-500">Documentation</div>
-                                Usage instructions and reference
-                            
-                            </div>
-                        </a
-                        >
-                        <div class="dropdown-divider m-0"></div>
-                        <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-admin-pro/components" target="_blank"
-                            >
-                            <div class="icon-stack bg-primary-soft text-primary mr-4">
-                                <i data-feather="code"></i>
-                            </div>
-                            <div>
-                                <div class="small text-gray-500">Components</div>
-                                Code snippets and reference
-                            
-                            </div>
-                        </a
-                        >
-                        <div class="dropdown-divider m-0"></div>
-                        <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-admin-pro/changelog" target="_blank"
-                            >
-                            <div class="icon-stack bg-primary-soft text-primary mr-4">
-                                <i data-feather="file-text"></i>
-                            </div>
-                            <div>
-                                <div class="small text-gray-500">Changelog</div>
-                                Updates and changes
-                            
-                            </div>
-                        </a
-                        >
-                    </div>
-                </li>
                 <li class="nav-item dropdown no-caret mr-3 dropdown-notifications">
                     <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownAlerts" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i data-feather="bell"></i>
@@ -156,32 +111,32 @@
                                 <div class="dropdown-notifications-item-content-details">Diane Chambers &#xB7; 2d</div>
                             </div>
                         </a
-                        >
+                        >kateg
                         <a class="dropdown-item dropdown-notifications-footer" href="#!">Read All Messages</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown no-caret mr-3 dropdown-user">
                     <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="img-fluid" src="https://source.unsplash.com/QAB-WJcbgJk/60x60"/>
+                        <img class="img-fluid" src="<?= $pimage; ?>"/>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
                         <h6 class="dropdown-header d-flex align-items-center">
-                            <img class="dropdown-user-img" src="https://source.unsplash.com/QAB-WJcbgJk/60x60" />
+                            <img class="dropdown-user-img" src="<?= $pimage; ?>" />
                             <div class="dropdown-user-details">
-                                <div class="dropdown-user-details-name">Valerie Luna</div>
-                                <div class="dropdown-user-details-email">vluna@aol.com</div>
+                                <div class="dropdown-user-details-name"><?= $profile['user_fname'] . ' ' . $profile['user_lname'] ?></div>
+                                <div class="dropdown-user-details-email"><?= $profile['user_email'] ?></div>
                             </div>
                         </h6>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#!"
+                        <a class="dropdown-item" href="profile.php"
                             >
                             <div class="dropdown-item-icon">
                                 <i data-feather="settings"></i>
                             </div>
-                            Account
+                            Profil
                         </a
                         >
-                        <a class="dropdown-item" href="#!"
+                        <a class="dropdown-item" href="logout.php"
                             >
                             <div class="dropdown-item-icon">
                                 <i data-feather="log-out"></i>

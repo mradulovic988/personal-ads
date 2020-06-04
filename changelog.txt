@@ -92,3 +92,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Bugs
 - Check image issue with AJAX request on customer additional information portal
+
+## [1.0.0] - 06-04-2020
+### Added
+- Frontend forms change password, contact admin, delete account
+
+### Changed
+-
+
+### Removed
+-
+
+### Bugs
+- Check image issue with AJAX request on customer additional information portal

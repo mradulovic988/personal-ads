@@ -26,9 +26,14 @@ div#phoneSuccess {
     border-radius: 50%;
     height: 10rem;
     margin: 0 3rem 0 0;
+    border: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 .myProfilWrapper {
     position: relative;
     top: 50px;
+}
+
+.custom-file {
+    padding: 5px 1rem;
 }

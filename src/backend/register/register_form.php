@@ -1,7 +1,7 @@
 <?php
 $errors = [];
-
 if (isset($_POST['register_submit'])) {
+
 
     $register_firstName = mysqli_real_escape_string($db->connection, $_POST['register_firstName']);
     $register_lastName = mysqli_real_escape_string($db->connection, $_POST['register_lastName']);

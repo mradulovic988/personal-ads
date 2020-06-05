@@ -1,4 +1,5 @@
 <?php
+// Additional informations
 if (isset($_POST['phoneNumber_submit'])) {
     $phoneNumber = $_POST['phoneNumber'];
     $profilePhone = $db->query('UPDATE users SET user_phone = ? WHERE user_name = ?', $phoneNumber, $_SESSION['user_name']);

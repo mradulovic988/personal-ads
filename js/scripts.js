@@ -93,3 +93,14 @@
   })
 
 })(jQuery);
+
+$(document).ready(function() {
+  $('html, body').animate({
+    scrollTop: $("#custom_success").offset().top + $("#custom_success").height() / -1,
+  }, 1000);
+});
+$(document).ready(function() {
+  $('html, body').animate({
+    scrollTop: $("#custom_error").offset().top + $("#custom_error").height() / -1,
+  }, 1000);
+});

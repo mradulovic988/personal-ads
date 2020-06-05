@@ -105,3 +105,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Bugs
 - Check image issue with AJAX request on customer additional information portal
+
+## [1.0.0] - 06-05-2020
+### Added
+- Change Password done
+
+### Changed
+-
+
+### Removed
+-
+
+### Bugs
+- Check image issue with AJAX request on customer additional information portal
+- AJAX Condition

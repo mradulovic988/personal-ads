@@ -1,4 +1,4 @@
-<div class="container-fluid mt-n10">
+<div class="container mt-n10">
     <div class="card">
         <div class="card-header">Dodatne informacije</div>
         <div class="card-body">

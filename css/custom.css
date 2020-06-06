@@ -37,3 +37,7 @@ div#phoneSuccess {
 .custom-file {
     padding: 5px 1rem;
 }
+
+.custom_description {
+    font-size: 11px;
+}

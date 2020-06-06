@@ -119,3 +119,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Bugs
 - Check image issue with AJAX request on customer additional information portal
 - AJAX Condition
+
+## [1.0.0] - 06-06-2020
+### Added
+- Delete user
+- Delete image on deleting user
+- Email on Delete popup
+- Frontend delete user popup
+
+### Changed
+- Delete current image when user change it
+
+### Removed
+- Delete necessary images from the register-user folder
+- Removed issue with deleting images
+
+### Bugs
+- Check image issue with AJAX request on customer additional information portal
+- AJAX Condition

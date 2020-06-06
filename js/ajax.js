@@ -130,6 +130,57 @@ $(document).ready(function() {
         });
     });
 
+    // Sending email from deleting profile
+    $('#deleteAccountForm').submit(function(e) {
+        e.preventDefault();
+
+        let willBack = $('#willBack').val();
+        let dontUnderstand = $('#dontUnderstand').val();
+        let dontSecure = $('#dontSecure').val();
+        let tooMuchTime = $('#tooMuchTime').val();
+        let manyMessages = $('#manyMessages').val();
+        let moreAccount = $('#moreAccount').val();
+        let notUseful = $('#notUseful').val();
+        let privacyCare = $('#privacyCare').val();
+        let rest = $('#rest').val();
+        let explainMore = $('#explainMore').val();
+        let reasonSubmit = $('#reasonSubmit').val();
+
+        let $body = $("body");
+
+        $(document).on({
+            ajaxStart: function() { $body.addClass("loading"); },
+            ajaxStop: function() { $body.removeClass("loading"); }
+        });
+
+        $.ajax({
+            type: "POST",
+            data: {
+                willBack:willBack,
+                dontUnderstand:dontUnderstand,
+                dontSecure:dontSecure,
+                tooMuchTime:tooMuchTime,
+                manyMessages:manyMessages,
+                moreAccount:moreAccount,
+                notUseful:notUseful,
+                privacyCare:privacyCare,
+                rest:rest,
+                explainMore:explainMore,
+                reasonSubmit: true
+            },
+            dataType: 'text',
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function() {
+                $('#deleteEmailSuccess').html('<div id="custom_success" class="alert alert-success">Hvala na vašem kontaktu.</div>');
+                setTimeout(function() {
+                    $('#deleteEmailSuccess').fadeOut();
+                }, 2000)
+            }
+        });
+    });
+
 
 
 })

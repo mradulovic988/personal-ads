@@ -15,8 +15,13 @@
                                     <div class="text-center small text-muted mb-4">Unesite svoju e-mail adresu i mi ćemo vam poslati trenutnu lozinku.</div>
                                     <form method="POST" enctype="multipart/form-data">
                                         <div class="form-group">
-                                            <label class="text-gray-600 small" for="emailExample">E-mail adresa</label>
-                                            <input class="form-control form-control-solid py-4" name="forgetPassword_email" type="email" placeholder="Email Address" aria-describedby="emailExample" required="" oninvalid="this.setCustomValidity('Ovo polje je obavezno.')" oninput="setCustomValidity('')"/>
+                                            <label class="text-gray-600 small" for="forgetUsername">Korisničko ime</label>
+                                            <input class="form-control form-control-solid py-4" id="forgetUsername" name="forgetUsername" type="text" placeholder="Korisničko ime" aria-describedby="emailExample" required="" oninvalid="this.setCustomValidity('Ovo polje je obavezno.')" oninput="setCustomValidity('')"/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-gray-600 small" for="forgetEmail">E-mail adresa</label>
+                                            <input class="form-control form-control-solid py-4" id="forgetEmail" name="forgetEmail" type="email" placeholder="Email Address" aria-describedby="emailExample" required="" oninvalid="this.setCustomValidity('Ovo polje je obavezno.')" oninput="setCustomValidity('')"/>
                                         </div>
                                         <div class="form-group mb-0">
                                             <button type="submit" name="forgetPassword_submit" id="forgetPassword_submit" class="btn btn-primary mb-2 w-50 mr-1">Resetuj lozinku</button>

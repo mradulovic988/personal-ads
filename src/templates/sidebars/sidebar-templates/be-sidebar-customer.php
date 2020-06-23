@@ -23,12 +23,25 @@
                 </a>
                 <div class="sidenav-menu-heading">Interfejs</div>
 
-                <a class="nav-link" href="ads.php">
+                <a class="nav-link collapsed" href="javascript:void(0);" data-toggle="collapse"
+                   data-target="#adsCollapse" aria-expanded="false" aria-controls="adsCollapse">
                     <div class="nav-link-icon">
                         <i data-feather="volume-2"></i>
                     </div>
                     Oglasi
+
+                    <div class="sidenav-collapse-arrow">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
                 </a>
+
+                <div class="collapse" id="adsCollapse">
+                    <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavLayout">
+                        <a class="nav-link" href="ads.php">Moji oglasi</a>
+                        <a class="nav-link" href="add_ads.php">Dodaj oglas</a>
+                    </nav>
+                </div>
+
             </div>
         </div>
         <?php include realpath('src/templates/sidebars/sidebar-templates/be-sidebar-footer.php'); ?>

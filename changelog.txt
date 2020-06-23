@@ -144,3 +144,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Check forget password
 - Check image issue with AJAX request on customer additional information portal
 - AJAX Condition
+
+##########################################################################################################
+## [1.0.0] - 06-24-2020
+### Added
+- Frontend part for the adding new customer ads
+
+### Changed
+- Structure for admin sidebar - added new ads
+
+### Removed
+-
+
+### Bugs
+- Check forget password
+- Check image issue with AJAX request on customer additional information portal
+- AJAX Condition

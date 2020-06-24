@@ -149,6 +149,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 06-24-2020
 ### Added
 - Frontend part for the adding new customer ads
+- Created query to add multiple images to database column
 
 ### Changed
 - Structure for admin sidebar - added new ads

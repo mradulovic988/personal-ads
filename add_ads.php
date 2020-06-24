@@ -30,7 +30,7 @@
                         <div class="form-row">
                             <div class="form-group col-md-4">
                                 <label for="adsCategory">Kategorija</label>
-                                <select id="adsCategory" name="adsCategory" class="form-control">
+                                <select id="adsCategory" name="adsCategory[]" class="form-control">
                                     <option selected disabled>Odaberi kategoriju...</option>
                                     <option value="onatrazinjega">Ona traži njega</option>
                                     <option value="onatrazinju">Ona traži nju</option>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="adsTown">Grad</label>
-                                <select id="adsTown" name="adsTown" class="form-control">
+                                <select id="adsTown" name="adsTown[]" class="form-control">
                                     <option selected disabled>Odaberi grad...</option>
                                     <option value="Beograd">Beograd</option>
                                     <option value="Ada">Ada</option>
@@ -204,7 +204,7 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="adsPlan">Plan</label>
-                                <select id="adsPlan" name="adsPlan" class="form-control">
+                                <select id="adsPlan" name="adsPlan[]" class="form-control">
                                     <option selected disabled>Odaberi plan...</option>
                                     <option value="besplatan">Besplatan (5 dana)</option>
                                     <option value="basic">Osnovni (7 dana - 350 rsd)</option>
@@ -215,7 +215,7 @@
                         </div>
                         <div class="form-group">
                             <label for="adsImages">Dodajte slike</label>
-                            <input type="file" class="form-control-file" id="adsImages" name="adsImages" multiple>
+                            <input type="file" class="form-control-file" id="adsImages" name="adsImages[]" multiple>
                         </div>
 
                         <div class="form-group">
@@ -226,7 +226,7 @@
 
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="adsAgree" name="adsAgree">
+                                <input class="form-check-input" type="checkbox" id="adsAgree" name="adsAgree" required>
                                 <label class="form-check-label" for="adsAgree">
                                     Slažem se sa politikom privatnosti
                                 </label>

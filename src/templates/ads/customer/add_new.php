@@ -12,7 +12,7 @@ if (isset($_POST['adsSubmit'])) {
     $adsTown = mysqli_real_escape_string($db->connection, print_r(implode('', $_POST['adsTown']), true));
     $adsPlan = mysqli_real_escape_string($db->connection, print_r(implode('', $_POST['adsPlan']), true));
 
-    $targetDir = realpath('assets/img/ads/');
+    $targetDir = 'assets/img/ads/';
     $allowTypes = array('jpg', 'png', 'jpeg');
 
     $statusMsg = $errorMsg = $insertValuesSQL = $errorUpload = $errorUploadType = '';

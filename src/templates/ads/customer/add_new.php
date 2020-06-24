@@ -43,7 +43,7 @@ if (isset($_POST['adsSubmit'])) {
         if (!empty($insertValuesSQL)) {
             $insertValuesSQL = trim($insertValuesSQL, ',');
             // Insert image file name into database
-            $insert = $db->query("INSERT INTO users_ads (user_id, ads_name, ads_description,	ads_category, ads_images, ads_location,	ads_plan, ads_end_date, ads_pending) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", '1', 'test', 'test', 'test', $insertValuesSQL, 'test', 'test', 'test', 1);
+            $insert = $db->query("INSERT INTO users_ads (user_id, ads_name, ads_description,	ads_category, ads_images, ads_location,	ads_plan, ads_end_date, ads_pending) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", $_SESSION['id'], $adsName, $adsDescription, $adsCategory, $insertValuesSQL, $adsTown, $adsPlan, 'test', 1);
             if ($insert) {
                 $errorUpload = !empty($errorUpload) ? 'Upload Error: ' . trim($errorUpload, ' | ') : '';
                 $errorUploadType = !empty($errorUploadType) ? 'File Type Error: ' . trim($errorUploadType, ' | ') : '';

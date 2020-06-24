@@ -24,14 +24,13 @@
                     <form method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="adsName">Naslov</label>
-                            <input type="text" class="form-control" id="adsName" name="adsName"
-                                   placeholder="Naslov vašeg oglasa">
+                            <input type="text" class="form-control" id="adsName" name="adsName" placeholder="Naslov vašeg oglasa" required>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-4">
                                 <label for="adsCategory">Kategorija</label>
-                                <select id="adsCategory" name="adsCategory[]" class="form-control">
-                                    <option selected disabled>Odaberi kategoriju...</option>
+                                <select id="adsCategory" name="adsCategory[]" class="form-control" required>
+                                    <option value="">Odaberi kategoriju...</option>
                                     <option value="onatrazinjega">Ona traži njega</option>
                                     <option value="onatrazinju">Ona traži nju</option>
                                     <option value="ontrazinju">On traži nju</option>
@@ -43,8 +42,8 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="adsTown">Grad</label>
-                                <select id="adsTown" name="adsTown[]" class="form-control">
-                                    <option selected disabled>Odaberi grad...</option>
+                                <select id="adsTown" name="adsTown[]" class="form-control" required>
+                                    <option value="">Odaberi grad...</option>
                                     <option value="Beograd">Beograd</option>
                                     <option value="Ada">Ada</option>
                                     <option value="Aleksandrovac">Aleksandrovac</option>
@@ -204,8 +203,8 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="adsPlan">Plan</label>
-                                <select id="adsPlan" name="adsPlan[]" class="form-control">
-                                    <option selected disabled>Odaberi plan...</option>
+                                <select id="adsPlan" name="adsPlan[]" class="form-control" required>
+                                    <option value="">Odaberi plan...</option>
                                     <option value="besplatan">Besplatan (5 dana)</option>
                                     <option value="basic">Osnovni (7 dana - 350 rsd)</option>
                                     <option value="plus">Premium (10 dana - 390 rsd)</option>
@@ -215,13 +214,12 @@
                         </div>
                         <div class="form-group">
                             <label for="adsImages">Dodajte slike</label>
-                            <input type="file" class="form-control-file" id="adsImages" name="adsImages[]" multiple>
+                            <input type="file" class="form-control-file" id="adsImages" name="adsImages[]" multiple required>
                         </div>
 
                         <div class="form-group">
                             <label for="adsDescription">Opis</label>
-                            <textarea class="form-control" id="adsDescription" name="adsDescription"
-                                      rows="3"></textarea>
+                            <textarea class="form-control" id="adsDescription" name="adsDescription" rows="3" required></textarea>
                         </div>
 
                         <div class="form-group">
